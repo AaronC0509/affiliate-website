@@ -211,6 +211,7 @@ public class UserRepositoryImpl implements UserRepository {
             products.setOrders(rs.getInt("orders"));
             products.setStockStatus(rs.getString("stock_status"));
             products.setAmount(rs.getBigDecimal("amount"));
+            products.setMe(rs.getBoolean("is_me"));
             return products;
         }
     }

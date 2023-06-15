@@ -10,6 +10,7 @@ public class Products {
     private Integer orders;
     private String stockStatus;
     private BigDecimal amount;
+    private boolean isMe;
 
     public Long getId() {
         return id;
@@ -65,5 +66,13 @@ public class Products {
 
     public void setAmount(BigDecimal amount) {
         this.amount = amount;
+    }
+
+    public boolean isMe() {
+        return isMe;
+    }
+
+    public void setMe(boolean me) {
+        isMe = me;
     }
 }
